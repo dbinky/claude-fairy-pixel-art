@@ -1,10 +1,10 @@
 # Claude-Generated Pixel Art Pipeline
 
-A complete example of using Claude to generate all pixel art assets for a game — from writing the asset spec, to building a Python generator script, to creating a browser-based pixel editor for touch-ups. Every image in [Fairy Frontier](https://github.com/dbinky/FairyFrontier) (a M.U.L.E.-inspired turn-based strategy game built in Flutter) was produced this way, with zero traditional art tools.
+A complete example of using Claude to generate all pixel art assets for a game — from writing the asset spec, to building a Python generator script, to creating a browser-based pixel editor for touch-ups. Every image was produced this way, with zero traditional art tools.
 
 ## Background
 
-I'm a solo developer working on a fairy-themed economic strategy game. I can't draw. At all. Rather than struggle with AI image generators (which produce inconsistent styles, wrong sizes, and no transparency), I took a different approach: I had Claude write a Python script that draws every asset pixel-by-pixel using Pillow. The result is 163 PNG files with a consistent 8-bit art style, proper alpha channels, exact pixel dimensions, and deterministic output — run the script again, get the same images.
+I'm a solo developer working on a fairy-themed strategy game. I can draw, but have struggled with game art. Rather than struggle with AI image generators (which produce inconsistent styles, wrong sizes, and no transparency), I took a different approach: I had Claude write a Python script that draws every asset pixel-by-pixel using Pillow. The result is 163 PNG files with a consistent 8-bit art style, proper alpha channels, exact pixel dimensions, and deterministic output — run the script again, get the same images.
 
 This repo contains the three key files from that process, shared so others can see how it works and adapt the approach for their own games.
 
